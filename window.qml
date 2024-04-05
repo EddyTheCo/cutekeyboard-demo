@@ -25,7 +25,7 @@ ApplicationWindow {
     SwipeView {
         id: view
 
-        currentIndex: 2
+        currentIndex: 0
         onCurrentIndexChanged: inputPanel.state = ""
         anchors.top: indicator.bottom
         width:window.width
@@ -36,16 +36,22 @@ ApplicationWindow {
             id: landpage
             width:view.width
             height:view.height
+
         }
         NormalTextPage {
             id: normaltextpage
             width:view.width
             height:view.height
-            onSelectedChanged: inputPanel.languageLayout=normaltextpage.selected
+
         }
 
         DigitTextPage {
             id: digittextpage
+        }
+        ColorPickerPage {
+            id: colorpickerpage
+            width:view.width
+            height:view.height
         }
 
     }
@@ -56,8 +62,11 @@ ApplicationWindow {
         y: window.height
         anchors.left: parent.left
         anchors.right: parent.right
-        languageLayout: "Es"
-
+        languageLayout: normaltextpage.selected
+        backgroundColor: colorpickerpage.backgroundColor
+        btnBackgroundColor: colorpickerpage.btnBackgroundColor
+        btnSpecialBackgroundColor: colorpickerpage.btnSpecialBackgroundColor
+        btnTextColor: colorpickerpage.btnTextColor
         states: State {
             name: "visible"
             when: Qt.inputMethod.visible

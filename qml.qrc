@@ -4,6 +4,8 @@
         <file>Landpage.qml</file>
         <file>NormalTextPage.qml</file>
         <file>DigitTextPage.qml</file>
+        <file>ColorPickerPage.qml</file>
+        <file>CustomTextField.qml</file>
         <file>Fonts/Titillium_Web/TitilliumWeb-Regular.ttf</file>
     </qresource>
 </RCC>

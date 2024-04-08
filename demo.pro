@@ -11,7 +11,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        demo.cpp
+        cuteKeyboardDemo.cpp
 
 RESOURCES += qml.qrc
 

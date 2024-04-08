@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
     QQmlApplicationEngine engine;
     engine.addImportPath(":/amarulasolutions.com/imports/");
-    const QUrl url(QStringLiteral("qrc:/amarulasolutions.com/imports/window.qml"));
+    const QUrl url(QStringLiteral("qrc:/amarulasolutions.com/imports/qml/window.qml"));
     QObject::connect(
         &engine, &QQmlApplicationEngine::objectCreated, &app,
         [url](QObject *obj, const QUrl &objUrl) {

@@ -1,3 +1,4 @@
+
 QT += quick
 
 CONFIG += c++11
@@ -16,5 +17,5 @@ SOURCES += \
 RESOURCES += qml.qrc
 
 
-INSTALLS += target
 target.path = $$[QT_INSTALL_PREFIX]/bin
+INSTALLS += target

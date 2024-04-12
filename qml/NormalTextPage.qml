@@ -145,39 +145,16 @@ ColumnLayout
 
     }
 
-    TextField
+    CustomTextField
     {
         id:textfield
         Layout.alignment: Qt.AlignBottom|Qt.AlignHCenter
         Layout.bottomMargin: 50
         Layout.fillWidth: true
         Layout.maximumWidth: 300
-        color: "white"
+
         font.pixelSize: parent.height*0.1
-        font.family: titillFont.name
-        background: Item {
-            implicitWidth: 200
-            implicitHeight: 40
-            Rectangle
-            {
-                id:botomline
-                width:parent.width
-                height:1
-                anchors.bottom: parent.bottom
-                color:"#afafb1"
-            }
-            Rectangle
-            {
-                width:parent.width*((textfield.activeFocus)?1.0:0.4)
-                Behavior on width { SmoothedAnimation { velocity: 200 } }
-                height:4
-                anchors.verticalCenter: botomline.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                color:"#afafb1"
-                radius:Math.min(width,height);
-                visible:textfield.enabled
-            }
-        }
+
     }
 
 

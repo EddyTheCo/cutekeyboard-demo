@@ -1,3 +1,4 @@
+
 QT += quick
 
 CONFIG += c++11
@@ -11,10 +12,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        demo.cpp
+        cuteKeyboardDemo.cpp
 
 RESOURCES += qml.qrc
 
 
-INSTALLS += target
 target.path = $$[QT_INSTALL_PREFIX]/bin
+INSTALLS += target

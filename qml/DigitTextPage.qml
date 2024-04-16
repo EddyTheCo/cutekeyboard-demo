@@ -18,7 +18,6 @@ Item {
         implicitHeight:rowlayout.implicitHeight
         focus:true
 
-
         anchors.centerIn: parent
         width:parent.width*0.7
         height:parent.height*0.4

@@ -21,7 +21,7 @@ ColumnLayout
         Layout.fillWidth: true
         Layout.margins: 20
         Layout.maximumWidth: 3*height
-        Layout.maximumHeight: 150
+        Layout.maximumHeight: 300
         Layout.minimumHeight: 100
         Layout.alignment: Qt.AlignTop|Qt.AlignHCenter
 
@@ -74,7 +74,7 @@ ColumnLayout
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
             text:qsTr("Layout language")
-            font.pixelSize: 17
+            font.pixelSize: 30
             font.family: titillFont.name
             color: "#afafb1"
         }
@@ -151,7 +151,7 @@ ColumnLayout
         Layout.alignment: Qt.AlignBottom|Qt.AlignHCenter
         Layout.bottomMargin: 50
         Layout.fillWidth: true
-        Layout.maximumWidth: 300
+        Layout.maximumWidth: 500
 
         font.pixelSize: parent.height*0.1
 

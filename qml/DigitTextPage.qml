@@ -18,8 +18,12 @@ Item {
         implicitHeight:rowlayout.implicitHeight
         focus:true
 
+
         anchors.centerIn: parent
-        font.pixelSize: parent.height*0.1
+        width:parent.width*0.7
+        height:parent.height*0.4
+
+        font.pixelSize: Math.min(control.height,control.width)*0.2
         onFocusChanged: {
             if(control.focus)repeater.itemAt(0).focus=true;
         }

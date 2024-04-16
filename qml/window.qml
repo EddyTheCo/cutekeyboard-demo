@@ -47,6 +47,8 @@ ApplicationWindow {
 
         DigitTextPage {
             id: digittextpage
+            width:view.width
+            height:view.height
         }
         ColorPickerPage {
             id: colorpickerpage
